@@ -96,8 +96,60 @@ enter the second number: 54321
 the sum of 12345 and 54321 is : 66666
 ```
 
-> [!note] namespace
-> Namespaces allow us to avoid
-> inadvertent collisions between the names we define and uses of those same names
-> inside a library. All the names defined by the standard library are in the std
-> namespace.
+## namespace
+Namespaces allow us to avoid
+inadvertent collisions between the names we define and uses of those same names
+inside a library. All the names defined by the standard library are in the std
+namespace.
+
+> [!note] std
+> The prefix `std::` indicates that the names cout and endl
+> are defined inside the namespace named std
+
+
+# comments
+Comments help the human readers of our programs. They are typically
+used to summarize an algorithm, identify the purpose of a variable, or clarify an
+otherwise obscure segment of code. The compiler ignores comments, so they have no
+effect on the program’s behavior or performance.
+
+## Kinds of comments in C++
+- single-line and paired : //
+- multiple-lines comment : using /* and  */  the compiler ignores all the content between
+
+# Day 4
+
+# flow control
+in normal programs , statements will be executed sequntially that means the first statement of the code will be executed first and the second and so on. 
+there is a concept called flow control that provide us to run statements diffrently.
+## *While* statement
+the while statement is a loop that runs until the given condition is becoming true.
+### *while* structure
+```
+while (condition)
+{
+statement
+}
+```
+here is a program that sum the numbers from 1 through the given number  inclusive:
+```
+#include <iostream>
+
+int main(){
+  int counter = 1;
+  int result = 0;
+  int repeat = 0;
+
+  std::cout << "how many numbers do you want to sum up:" <<std::endl;
+  std::cin >> repeat;
+
+  while (counter <= repeat) //*loop is running until the counter is less-equle to the given number by user
+  {
+    std::cout <<result << " + " << counter << " = " << result+counter <<std::endl;
+    result += counter;
+    counter ++;
+  }
+
+  std::cout << "the sum of numbers 1 to " << repeat <<" is : " << result << std::endl;
+}
+```
