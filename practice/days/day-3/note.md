@@ -1,3 +1,55 @@
+---
+Author: M.Khojoii
+---
+# Day 1 ,2
+> [!important] Functions
+> Every C++ program contains one or more functions, one of which must be named
+> main. The operating system runs a C++ program by calling main.
+
+
+# function structure
+1. return type
+2. function name 
+3. parameter (probably empty enclosed in parentheses)
+4. function body
+
+here is a simple function that do nothing but returning a value to OS
+
+~~~
+int main()
+{
+	return 0;
+}
+~~~
+***return*** is a statement that terminate the function and pass the given value 
+
+> [!note] semicolon
+> Note the semicolon at the end of the return statement. Semicolons mark
+> the end of most statements in C++. They are easy to overlook but, when
+> forgotten, can lead to mysterious compiler error messages.
+
+# types
+types or data types are one of the most important concepts of every programming language
+a type define 2 things:
+1. the content of a data 
+2. the operations that can be done with that data
+these are the important types of c++:
+
+| int    | stores integers (whole numbers), without decimals, such as 123 or -123                    |
+| ------ | ----------------------------------------------------------------------------------------- |
+| double | stores floating point numbers, with decimals, such as 19.99 or -19.99                     |
+| char   | stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes |
+| string | stores text, such as "Hello World". String values are surrounded by double quotes         |
+| bool   | stores values with two states: true or false                                              |
+
+## Variables
+the data that we work with in a program are stored in variables and every variable has a type
+here is how to define a variable: type -> var name -> = -> value
+``int my_number = 222;``
+# executing c++ program
+c++ is a compiler language . it means that the code that we write must be compile in a language that the computer understands.
+because of that we need to download a compiler like GCC
+
 # Day 3
 
 > [!info] Input / Output
