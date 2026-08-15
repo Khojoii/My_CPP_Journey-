@@ -48,9 +48,11 @@ int main()
 ```
 
 
-> [!warning] warning
-> the type of the reference and the main object must be the same.
-> and we can assign reference to only **objects** not to a literal or else.
+> [!warning] rules
+> 1.the type of the reference and the main object must be the same.
+> 2.we can assign reference to only **objects** not to a literal or else.
+> 3.we can't define a reference without initialize it
+> 4.Because references are not objects, we can't define a reference to a reference.
 
 ```
 int &refVal4 = 10; // error: initializer must be an object
