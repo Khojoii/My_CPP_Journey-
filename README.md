@@ -1,6 +1,6 @@
 # My C++ Journey
 
-A concise, day-by-day record of learning C++ with small examples and notes with "C++ primer" book
+A concise, day-by-day record of learning C++ with small examples and notes with "C++ primer" book.
 
 Quick links
 
